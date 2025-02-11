@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestionnaire d'images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Gestionnaire d'images</h1>
+</header>
+<form id="image-upload-form">
+  <input type="file" id="image-input" multiple accept="image/*">
+  <button type="submit">Upload</button>
+</form>
+<div id="image-container"></div>
+
+<!-- Quiz Section -->
+<section id="quiz-section">
+  <h2>Quiz JS</h2>
+  <div id="quiz-container"></div>
+  <button id="submit-quiz">Soumettre</button>
+</section>
+
+<!-- Project Management Board Section -->
+<section id="project-board-section">
+  <h2>gestion de projet</h2>
+  <form id="project-form">
+    <input type="text" id="project-name" placeholder="Project Name" required>
+    <input type="text" id="project-description" placeholder="Project Description" required>
+    <button type="submit">ajouter projet</button>
+  </form>
+  <div id="project-board">
+    <div class="column" id="todo">
+      <h3>à faire</h3>
+    </div>
+    <div class="column" id="in-progress">
+      <h3>en cours</h3>
+    </div>
+    <div class="column" id="done">
+      <h3>terminé</h3>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<script src="quiz.js"></script>
+<script src="projectBoard.js"></script>
+</body>
+</html>
